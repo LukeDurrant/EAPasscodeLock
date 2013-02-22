@@ -19,7 +19,7 @@
 @synthesize passcodeDic;
 @synthesize unlockCode;
 @synthesize passcodeDelegate;
-@synthesize passcodeErrorLabel,passcodeErrorBaseView,passcodeErrorTryAgain,passcodeTitle;
+@synthesize passcodeErrorLabel,passcodeErrorBaseView,enterPassTitle,passcodeErrorTryAgain,passcodeTitle;
 @synthesize hintText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -113,14 +113,19 @@
 
 -(void)showError
 {
-    @autoreleasepool 
+    NSLog(@"showError");
+    firstDigit.hidden = YES;
+    secondDigit.hidden = YES;
+    thirdDigit.hidden = YES;
+    fourthDigit.hidden = YES;
+    digitPosition = 0;
+    passcodeErrorBaseView.hidden = NO;
+    enterPassTitle.hidden = YES;
+    
+    @autoreleasepool
     {
-        firstDigit.hidden = YES;
-        secondDigit.hidden = YES;
-        thirdDigit.hidden = YES;
-        fourthDigit.hidden = YES;    
-        digitPosition = 0;
-        passcodeErrorBaseView.hidden = NO;
+        
+        NSLog(@"Inside autorelease pool");
     }
 }
 

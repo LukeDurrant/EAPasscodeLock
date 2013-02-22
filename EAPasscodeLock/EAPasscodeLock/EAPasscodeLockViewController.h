@@ -35,6 +35,7 @@
     IBOutlet UIView* passcodeErrorBaseView;
     IBOutlet UILabel* passcodeErrorLabel;
     IBOutlet UILabel* passcodeErrorTryAgain;
+    IBOutlet UILabel* enterPassTitle;
     
     int digitPosition;
     BOOL keyIsBeenPressed;
@@ -57,7 +58,8 @@
 @property (nonatomic, retain) NSString* passcodeTitle;
 @property (nonatomic, retain) IBOutlet UIView* passcodeErrorBaseView;
 @property (nonatomic, retain) IBOutlet UILabel* passcodeErrorLabel;
-@property (nonatomic, retain) IBOutlet UILabel* passcodeErrorTryAgain; 
+@property (nonatomic, retain) IBOutlet UILabel* passcodeErrorTryAgain;
+@property (nonatomic, retain) IBOutlet UILabel* enterPassTitle; 
 
 @property (nonatomic) id<EAPasscodeLockProtocol> passcodeDelegate;
 

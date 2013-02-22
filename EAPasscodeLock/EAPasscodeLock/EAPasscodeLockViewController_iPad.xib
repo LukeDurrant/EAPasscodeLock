@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1296</int>
-		<string key="IBDocument.SystemVersion">11E53</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
-		<string key="IBDocument.AppKitVersion">1138.47</string>
-		<string key="IBDocument.HIToolboxVersion">569.00</string>
+		<int key="IBDocument.SystemTarget">1536</int>
+		<string key="IBDocument.SystemVersion">12C3012</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2844</string>
+		<string key="IBDocument.AppKitVersion">1187.34</string>
+		<string key="IBDocument.HIToolboxVersion">625.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1181</string>
+			<string key="NS.object.0">1930</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
+			<string>IBProxyObject</string>
 			<string>IBUIButton</string>
 			<string>IBUIImageView</string>
-			<string>IBUIView</string>
 			<string>IBUILabel</string>
-			<string>IBProxyObject</string>
+			<string>IBUIView</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -55,7 +55,7 @@
 					<object class="IBUILabel" id="930187631">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{256, 327}, {257, 35}}</string>
+						<string key="NSFrame">{{256, 335}, {257, 35}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="457670328"/>
@@ -354,6 +354,7 @@
 						<string key="NSFrame">{{435, 635}, {90, 48}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<float key="IBUIAlpha">0.10000000149011612</float>
@@ -512,7 +513,7 @@
 							<object class="IBUILabel" id="474135708">
 								<reference key="NSNextResponder" ref="871031669"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 17}, {257, 35}}</string>
+								<string key="NSFrame">{{20, 24}, {257, 35}}</string>
 								<reference key="NSSuperview" ref="871031669"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="335885003"/>
@@ -538,7 +539,7 @@
 							<object class="IBUILabel" id="335885003">
 								<reference key="NSNextResponder" ref="871031669"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{20, 43}, {257, 35}}</string>
+								<string key="NSFrame">{{20, 47}, {257, 35}}</string>
 								<reference key="NSSuperview" ref="871031669"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="930187631"/>
@@ -581,9 +582,8 @@
 				<reference key="NSNextKeyView" ref="24633942"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MC4zMzMzMzMzMzMzAA</bytes>
+					<bytes key="NSWhite">MCAwAA</bytes>
 				</object>
-				<float key="IBUIAlpha">0.80000001192092896</float>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
 					<int key="IBUIStatusBarStyle">2</int>
 				</object>
@@ -767,6 +767,14 @@
 						<reference key="destination" ref="335885003"/>
 					</object>
 					<int key="connectionID">111</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">enterPassTitle</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="930187631"/>
+					</object>
+					<int key="connectionID">114</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -1027,9 +1035,9 @@
 						<int key="objectID">105</int>
 						<reference key="object" ref="871031669"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="1004373534"/>
 							<reference ref="474135708"/>
 							<reference ref="335885003"/>
+							<reference ref="1004373534"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -1098,7 +1106,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">113</int>
+			<int key="maxID">116</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1132,6 +1140,7 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="cancelKey">UIButton</string>
 						<string key="deleteKey">UIButton</string>
+						<string key="enterPassTitle">UILabel</string>
 						<string key="firstDigit">UIImageView</string>
 						<string key="fourthDigit">UIImageView</string>
 						<string key="hintKey">UIButton</string>
@@ -1160,6 +1169,10 @@
 						<object class="IBToOneOutletInfo" key="deleteKey">
 							<string key="name">deleteKey</string>
 							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="enterPassTitle">
+							<string key="name">enterPassTitle</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="firstDigit">
 							<string key="name">firstDigit</string>
@@ -1247,10 +1260,6 @@
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
-			<real value="1296" key="NS.object.0"/>
-		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
@@ -1258,6 +1267,6 @@
 			<string key="passcodeDigit2.png">{40, 40}</string>
 			<string key="passcodeLock2.png">{300, 382}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">1181</string>
+		<string key="IBCocoaTouchPluginVersion">1930</string>
 	</data>
 </archive>
